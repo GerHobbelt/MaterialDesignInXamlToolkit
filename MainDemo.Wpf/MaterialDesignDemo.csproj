@@ -146,10 +146,6 @@
     <Compile Include="MenusAndToolBars.xaml.cs">
       <DependentUpon>MenusAndToolBars.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PaletteSelector.xaml.cs">
-      <DependentUpon>PaletteSelector.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PaletteSelectorViewModel.cs" />
     <Compile Include="Pickers.xaml.cs">
       <DependentUpon>Pickers.xaml</DependentUpon>
     </Compile>
@@ -294,14 +290,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Palette.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PaletteSelector.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pickers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -380,9 +368,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Palette.xaml.cs">
-      <DependentUpon>Palette.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -411,10 +396,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MaterialDesignColors.Wpf\MaterialDesignColors.Wpf.csproj">
-      <Project>{90b53209-c60c-4655-b28d-a1b3e1044ba3}</Project>
-      <Name>MaterialDesignColors.Wpf</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MaterialDesignThemes.Wpf\MaterialDesignThemes.Wpf.csproj">
       <Project>{f079fb0a-a8ed-4216-b6a5-345756751a04}</Project>
       <Name>MaterialDesignThemes.Wpf</Name>
