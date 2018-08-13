@@ -85,13 +85,6 @@ namespace MaterialDesignColors.WpfExample.Domain
                 {
                     VerticalScrollBarVisibilityRequirement = ScrollBarVisibility.Auto
                 },
-                new DemoItem("Icon Pack", new IconPack { DataContext = new IconPackViewModel(snackbarMessageQueue) },
-                    new []
-                    {
-                        DocumentationLink.DemoPageLink<IconPack>("Demo View"),
-                        DocumentationLink.DemoPageLink<IconPackViewModel>("Demo View Model"),
-                        DocumentationLink.ApiLink<PackIcon>()
-                    }),
                 new DemoItem("Colour Zones", new ColorZones(),
                     new []
                     {

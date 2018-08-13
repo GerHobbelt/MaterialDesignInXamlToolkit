@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:MaterialDesignDemo.TransitionsDemo"
              mc:Ignorable="d" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              d:DesignHeight="300" d:DesignWidth="300">
     <materialDesign:ColorZone Mode="Light" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid Margin="64">
@@ -22,14 +23,14 @@
                     Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}"
                     VerticalAlignment="Center" HorizontalAlignment="Left" 
                     Margin="16">
-                    <materialDesign:PackIcon Kind="StepBackward" />
+                    <iconPacks:PackIconMaterial Kind="StepBackward" />
                 </Button>
                 <!--
                 <Button Style="{DynamicResource MaterialDesignFloatingActionAccentButton}"                     
                     Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"
                     VerticalAlignment="Top"
                     Margin="16">
-                    <materialDesign:PackIcon Kind="StepForward" />
+                    <iconPacks:PackIconMaterial Kind="StepForward" />
                 </Button>
                 -->
             </StackPanel>

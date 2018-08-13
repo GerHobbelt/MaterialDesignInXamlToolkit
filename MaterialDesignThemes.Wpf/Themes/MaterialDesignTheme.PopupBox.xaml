@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
-                    xmlns:controlzEx="clr-namespace:ControlzEx">
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
@@ -15,7 +15,7 @@
     <converters:NullableToVisibilityConverter x:Key="InvertedNullVisibilityConverter" NullValue="Visible" NotNullValue="Collapsed" />
     <converters:BrushRoundConverter x:Key="BrushRoundConverter"/>
 
-    <wpf:PackIcon Kind="DotsVertical" x:Key="MaterialDesignPopupBoxToggleContent" x:Shared="False" Margin="4 0 4 0" Width="24" Height="24"
+    <iconPacks:PackIconMaterial Kind="DotsVertical" x:Key="MaterialDesignPopupBoxToggleContent" x:Shared="False" Margin="4 0 4 0" Width="24" Height="24"
                   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=wpf:PopupBox}, Path=Foreground}" />
     
     <Style TargetType="{x:Type wpf:PopupBox}" x:Key="MaterialDesignPopupBox">
@@ -53,7 +53,7 @@
                                       Cursor="Hand"
                                       VerticalAlignment="Center"
                                       />
-                        <controlzEx:PopupEx x:Name="PART_Popup" IsOpen="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsPopupOpen, Mode=TwoWay}"
+                        <wpf:PopupEx x:Name="PART_Popup" IsOpen="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsPopupOpen, Mode=TwoWay}"
                                             CustomPopupPlacementCallback="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PopupPlacementMethod}"                                            
                                             HorizontalOffset="5"
                                             VerticalOffset="5"
@@ -122,7 +122,7 @@
                                     </Style>
                                 </wpf:Card.Resources>
                             </wpf:Card>
-                        </controlzEx:PopupEx>
+                        </wpf:PopupEx>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="false">
@@ -142,8 +142,8 @@
     <Style x:Key="MaterialDesignToolForegroundPopupBox" BasedOn="{StaticResource MaterialDesignToolPopupBox}" TargetType="wpf:PopupBox">
         <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}"/>
     </Style>
-    
-    <wpf:PackIcon x:Shared="False" x:Key="MaterialDesignMultiFloatingActionPopupBoxIcon"
+
+    <iconPacks:PackIconMaterial x:Shared="False" x:Key="MaterialDesignMultiFloatingActionPopupBoxIcon"
                   Kind="Plus" Width="24" Height="24" Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=wpf:PopupBox}, Path=Foreground}" />
     
     <Style TargetType="{x:Type wpf:PopupBox}" x:Key="MaterialDesignMultiFloatingActionPopupBox">
@@ -332,7 +332,7 @@
                                 </ContentControl>
                             </Grid>
                         </ToggleButton>
-                        <controlzEx:PopupEx x:Name="PART_Popup" 
+                        <wpf:PopupEx x:Name="PART_Popup" 
                                           IsOpen="False"
                                           CustomPopupPlacementCallback="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PopupPlacementMethod}"                                                                                    
                                           PlacementTarget="{Binding ElementName=PART_Toggle}"
@@ -367,7 +367,7 @@
                                     </ContentControl.Resources>
                                 </ContentControl>
                             </Grid>
-                        </controlzEx:PopupEx>
+                        </wpf:PopupEx>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsPopupOpen" Value="True">

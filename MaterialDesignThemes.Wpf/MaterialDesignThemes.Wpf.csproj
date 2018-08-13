@@ -47,18 +47,9 @@
     <NoWarn>CS1591;CS1574</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\paket-files\ControlzEx\ControlzEx\src\ControlzEx\BadgedEx.cs">
-      <Paket>True</Paket>
-      <Link>ControlzEx/BadgedEx.cs</Link>
-    </Compile>
-    <Compile Include="..\paket-files\ControlzEx\ControlzEx\src\ControlzEx\PackIconBase.cs">
-      <Paket>True</Paket>
-      <Link>ControlzEx/PackIconBase.cs</Link>
-    </Compile>
-    <Compile Include="..\paket-files\ControlzEx\ControlzEx\src\ControlzEx\PopupEx.cs">
-      <Paket>True</Paket>
-      <Link>ControlzEx/PopupEx.cs</Link>
-    </Compile>
+    <Reference Include="MahApps.Metro.IconPacks.Material">
+      <HintPath>..\Libraries\MahApps.Metro.IconPacks.Material\MahApps.Metro.IconPacks.Material.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -261,6 +252,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Badged.cs" />
+    <Compile Include="BadgedEx.cs" />
     <Compile Include="ButtonProgressAssist.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Chip.cs" />
@@ -329,8 +321,8 @@
     <Compile Include="ListBoxAssist.cs" />
     <Compile Include="ListViewAssist.cs" />
     <Compile Include="MessageQueueExtension.cs" />
-    <Compile Include="PackIconExtension.cs" />
     <Compile Include="Plane3D.cs" />
+    <Compile Include="PopupEx.cs" />
     <Compile Include="ScaleHost.cs" />
     <Compile Include="ScrollViewerAssist.cs" />
     <Compile Include="Screen.cs" />
@@ -351,9 +343,6 @@
     <Compile Include="MaterialDataGridComboBoxColumn.cs" />
     <Compile Include="MaterialDataGridTextColumn.cs" />
     <Compile Include="MaterialDateDisplay.cs" />
-    <Compile Include="PackIcon.cs" />
-    <Compile Include="PackIconDataFactory.cs" />
-    <Compile Include="PackIconKind.cs" />
     <Compile Include="PopupBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300"
              Background="{DynamicResource MaterialDesignPaper}">
@@ -17,7 +18,7 @@
         <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect SlideInFromRight, Duration=0:0:1.2}">
             <materialDesign:ColorZone Mode="PrimaryMid" materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin="4">
                 <StackPanel Margin="16" Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="Account" Height="32" Width="32" />
+                    <iconPacks:PackIconMaterial Kind="Account" Height="32" Width="32" />
                     <TextBlock Style="{DynamicResource MaterialDesignHeadlineTextBlock}" Margin="16 0 0 0">Contacts</TextBlock>
                 </StackPanel>
             </materialDesign:ColorZone>
@@ -38,7 +39,7 @@
             </ItemsControl.Resources>
             <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect ExpandIn}">
                 <materialDesign:ColorZone>
-                    <materialDesign:PackIcon Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <iconPacks:PackIconMaterial Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </materialDesign:ColorZone>
             </materialDesign:TransitioningContent>
 
@@ -47,7 +48,7 @@
                     <materialDesign:TransitionEffect Kind="ExpandIn" />
                 </materialDesign:TransitioningContent.OpeningEffects>
                 <materialDesign:ColorZone>
-                    <materialDesign:PackIcon Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <iconPacks:PackIconMaterial Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </materialDesign:ColorZone>
             </materialDesign:TransitioningContent>
 
@@ -56,7 +57,7 @@
                     <materialDesign:TransitionEffect Kind="ExpandIn" />
                 </materialDesign:TransitioningContent.OpeningEffects>
                 <materialDesign:ColorZone>
-                    <materialDesign:PackIcon Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <iconPacks:PackIconMaterial Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </materialDesign:ColorZone>
             </materialDesign:TransitioningContent>
 
@@ -65,7 +66,7 @@
                     <materialDesign:TransitionEffect Kind="ExpandIn" />
                 </materialDesign:TransitioningContent.OpeningEffects>
                 <materialDesign:ColorZone>
-                    <materialDesign:PackIcon Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <iconPacks:PackIconMaterial Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </materialDesign:ColorZone>
             </materialDesign:TransitioningContent>
 
@@ -74,7 +75,7 @@
                     <materialDesign:TransitionEffect Kind="ExpandIn" />
                 </materialDesign:TransitioningContent.OpeningEffects>
                 <materialDesign:ColorZone>
-                    <materialDesign:PackIcon Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <iconPacks:PackIconMaterial Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </materialDesign:ColorZone>
             </materialDesign:TransitioningContent>
 
@@ -83,7 +84,7 @@
                     <materialDesign:TransitionEffect Kind="ExpandIn" />
                 </materialDesign:TransitioningContent.OpeningEffects>
                 <materialDesign:ColorZone>
-                    <materialDesign:PackIcon Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <iconPacks:PackIconMaterial Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </materialDesign:ColorZone>
             </materialDesign:TransitioningContent>
 
@@ -92,7 +93,7 @@
                     <materialDesign:TransitionEffect Kind="ExpandIn" />
                 </materialDesign:TransitioningContent.OpeningEffects>
                 <materialDesign:ColorZone>
-                    <materialDesign:PackIcon Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <iconPacks:PackIconMaterial Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </materialDesign:ColorZone>
             </materialDesign:TransitioningContent>
 
@@ -101,7 +102,7 @@
                     <materialDesign:TransitionEffect Kind="ExpandIn" />
                 </materialDesign:TransitioningContent.OpeningEffects>
                 <materialDesign:ColorZone>
-                    <materialDesign:PackIcon Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    <iconPacks:PackIconMaterial Kind="Phone" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </materialDesign:ColorZone>
             </materialDesign:TransitioningContent>
 
@@ -112,13 +113,13 @@
                     Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}"
                     VerticalAlignment="Center" HorizontalAlignment="Left" 
                     Margin="16">
-                <materialDesign:PackIcon Kind="StepBackward" />
+                <iconPacks:PackIconMaterial Kind="StepBackward" />
             </Button>
             <Button Style="{DynamicResource MaterialDesignFloatingActionAccentButton}"                     
                     Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"
                     VerticalAlignment="Top"
                     Margin="16">
-                <materialDesign:PackIcon Kind="StepForward" />
+                <iconPacks:PackIconMaterial Kind="StepForward" />
             </Button>
         </StackPanel>
     </Grid>

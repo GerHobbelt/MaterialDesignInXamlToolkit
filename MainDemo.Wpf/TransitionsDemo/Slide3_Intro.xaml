@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <materialDesign:ColorZone Mode="PrimaryDark" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Stretch">
@@ -14,12 +15,12 @@
                         Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}"
                         VerticalAlignment="Center"
                         Margin="16">
-                    <materialDesign:PackIcon Kind="StepBackward" />
+                    <iconPacks:PackIconMaterial Kind="StepBackward" />
                 </Button>
                 <Button Style="{DynamicResource MaterialDesignFloatingActionAccentButton}"                     
                         Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"                    
                         Margin="16">
-                    <materialDesign:PackIcon Kind="StepForward" />
+                    <iconPacks:PackIconMaterial Kind="StepForward" />
                 </Button>
             </StackPanel>
         </StackPanel>

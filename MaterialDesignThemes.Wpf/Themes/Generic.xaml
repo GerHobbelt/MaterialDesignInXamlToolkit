@@ -4,7 +4,8 @@
     xmlns:local="clr-namespace:MaterialDesignThemes.Wpf"
     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
     xmlns:transitions="clr-namespace:MaterialDesignThemes.Wpf.Transitions"
-    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
     <ResourceDictionary.MergedDictionaries>
         <!--    we only bring in the dictionaries for controls which were "invented"
@@ -812,7 +813,7 @@
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type local:PackIcon}">
+    <Style TargetType="{x:Type iconPacks:PackIconMaterial}">
         <Setter Property="Height" Value="16" />
         <Setter Property="Width" Value="16" />
         <Setter Property="HorizontalAlignment" Value="Left" />
@@ -821,7 +822,7 @@
         <Setter Property="FlowDirection" Value="LeftToRight" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type local:PackIcon}">
+                <ControlTemplate TargetType="{x:Type iconPacks:PackIconMaterial}">
                     <Border Background="{TemplateBinding Background}" 
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">

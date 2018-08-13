@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <DockPanel>
@@ -13,13 +14,13 @@
                 <MenuItem Header="_File">
                     <MenuItem Header="Save">
                         <MenuItem.Icon>
-                            <materialDesign:PackIcon Kind="ContentSave" />
+                            <iconPacks:PackIconMaterial Kind="ContentSave" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem Header="Save As.." />
                     <MenuItem Header="Exit" InputGestureText="Ctrl+E">
                         <MenuItem.Icon>
-                            <materialDesign:PackIcon Kind="ExitToApp" />
+                            <iconPacks:PackIconMaterial Kind="ExitToApp" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <Separator />
@@ -37,17 +38,17 @@
                 <MenuItem Header="_Edit">
                     <MenuItem Header="_Cut" Command="Cut">
                         <MenuItem.Icon>
-                            <materialDesign:PackIcon Kind="ContentCut" />
+                            <iconPacks:PackIconMaterial Kind="ContentCut" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem Header="_Copy" Command="Copy">
                         <MenuItem.Icon>
-                            <materialDesign:PackIcon Kind="ContentCopy" />
+                            <iconPacks:PackIconMaterial Kind="ContentCopy" />
                         </MenuItem.Icon>
                     </MenuItem>
                     <MenuItem Header="_Paste" Command="Paste">
                         <MenuItem.Icon>
-                            <materialDesign:PackIcon Kind="ContentPaste" />
+                            <iconPacks:PackIconMaterial Kind="ContentPaste" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
@@ -58,27 +59,27 @@
             <ToolBarTray>
                 <ToolBar Style="{DynamicResource MaterialDesignToolBar}" ClipToBounds="False">
                     <Button ToolTip="Follow me on Twitter" Click="TwitterButton_OnClick">
-                        <materialDesign:PackIcon Kind="TwitterBox" />
+                        <iconPacks:PackIconMaterial Kind="TwitterBox" />
                     </Button>
                     <Button ToolTip="Save">
-                        <materialDesign:PackIcon Kind="ContentSave" />
+                        <iconPacks:PackIconMaterial Kind="ContentSave" />
                     </Button>
                     <Separator />
                     <Button Command="Cut" ToolTip="Cut" ToolBar.OverflowMode="AsNeeded">
-                        <materialDesign:PackIcon Kind="ContentCut" />
+                        <iconPacks:PackIconMaterial Kind="ContentCut" />
                     </Button>
                     <Button Command="Copy" ToolTip="Copy that stuff" ToolBar.OverflowMode="AsNeeded">
-                        <materialDesign:PackIcon Kind="ContentCopy" />
+                        <iconPacks:PackIconMaterial Kind="ContentCopy" />
                     </Button>
                     <Separator />
                     <Button Command="Paste" ToolTip="Paste some stuff" ToolBar.OverflowMode="AsNeeded">
-                        <materialDesign:PackIcon Kind="ContentPaste" />
+                        <iconPacks:PackIconMaterial Kind="ContentPaste" />
                     </Button>
                     <!-- when badging in a toolbar, make sure the parent ToolBar.ClipToBounds="False", and 
                      manually apply the button style -->
-                    <materialDesign:Badged ToolBar.OverflowMode="AsNeeded" Badge="{materialDesign:PackIcon Alert}">
+                    <materialDesign:Badged ToolBar.OverflowMode="AsNeeded" Badge="{iconPacks:Material Alert}">
                         <Button ToolTip="Badge it up!" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
-                            <materialDesign:PackIcon Kind="AirplaneTakeoff" />
+                            <iconPacks:PackIconMaterial Kind="AirplaneTakeoff" />
                         </Button>
                     </materialDesign:Badged>
                     <Separator/>
@@ -97,16 +98,16 @@
                             </StackPanel>
                         </ListBox.ToolTip>
                         <ListBoxItem >
-                            <materialDesign:PackIcon Kind="FormatAlignLeft"/>
+                            <iconPacks:PackIconMaterial Kind="FormatAlignLeft"/>
                         </ListBoxItem>
                         <ListBoxItem>
-                            <materialDesign:PackIcon Kind="FormatAlignCenter"/>
+                            <iconPacks:PackIconMaterial Kind="FormatAlignCenter"/>
                         </ListBoxItem>
                         <ListBoxItem>
-                            <materialDesign:PackIcon Kind="FormatAlignRight"/>
+                            <iconPacks:PackIconMaterial Kind="FormatAlignRight"/>
                         </ListBoxItem>
                         <ListBoxItem>
-                            <materialDesign:PackIcon Kind="FormatAlignJustify"/>
+                            <iconPacks:PackIconMaterial Kind="FormatAlignJustify"/>
                         </ListBoxItem>
                     </ListBox>
                     <Separator/>
@@ -119,13 +120,13 @@
                             </StackPanel>
                         </ListBox.ToolTip>
                         <ListBoxItem>
-                            <materialDesign:PackIcon Kind="FormatBold"/>
+                            <iconPacks:PackIconMaterial Kind="FormatBold"/>
                         </ListBoxItem>
                         <ListBoxItem>
-                            <materialDesign:PackIcon Kind="FormatItalic"/>
+                            <iconPacks:PackIconMaterial Kind="FormatItalic"/>
                         </ListBoxItem>
                         <ListBoxItem x:Name="UnderlineCheckbox">
-                            <materialDesign:PackIcon Kind="FormatUnderline"/>
+                            <iconPacks:PackIconMaterial Kind="FormatUnderline"/>
                         </ListBoxItem>
                     </ListBox>
                     <Separator/>
@@ -140,7 +141,7 @@
                         Check
                     </CheckBox>
                     <Button ToolTip="Take a nap" ToolBar.OverflowMode="Always">
-                        <materialDesign:PackIcon Kind="Hotel" />
+                        <iconPacks:PackIconMaterial Kind="Hotel" />
                     </Button>
                     <RadioButton GroupName="XXX" Content="Radio" />
                     <RadioButton GroupName="XXX" Content="Ga Ga" />

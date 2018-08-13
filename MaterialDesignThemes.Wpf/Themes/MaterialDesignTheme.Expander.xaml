@@ -2,7 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
-                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
     <converters:MathMultipleConverter x:Key="MathMlpMultipleConverter" Operation="Multiply" />
 
@@ -69,17 +70,17 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <wpf:PackIcon Kind="ChevronDown" Opacity=".38" x:Name="ExpandPath" RenderTransformOrigin="0.5,0.5"
+                        <iconPacks:PackIconMaterial Kind="ChevronDown" Opacity=".38" x:Name="ExpandPath" RenderTransformOrigin="0.5,0.5"
                                       Height="24" Width="24" Foreground="{TemplateBinding Foreground}">
-                            <wpf:PackIcon.RenderTransform>
+                            <iconPacks:PackIconMaterial.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
                                     <SkewTransform/>
                                     <RotateTransform />
                                     <TranslateTransform/>
                                 </TransformGroup>
-                            </wpf:PackIcon.RenderTransform>
-                        </wpf:PackIcon>
+                            </iconPacks:PackIconMaterial.RenderTransform>
+                        </iconPacks:PackIconMaterial>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

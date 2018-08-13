@@ -235,3 +235,6 @@ $RECYCLE.BIN/
 
 #React.JS
 .module-cache
+
+#Libraries
+!Libraries/MahApps.Metro.IconPacks.Material/MahApps.Metro.IconPacks.Material.dll

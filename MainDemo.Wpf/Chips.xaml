@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Margin="32">
@@ -38,7 +39,7 @@
                                  IconBackground="{DynamicResource PrimaryHueDarkBrush}"
                                  IconForeground="{DynamicResource PrimaryHueDarkForegroundBrush}">
                         <materialDesign:Chip.Icon>
-                            <materialDesign:PackIcon Kind="Twitter"></materialDesign:PackIcon>
+                            <iconPacks:PackIconMaterial Kind="Twitter"></iconPacks:PackIconMaterial>
                         </materialDesign:Chip.Icon>
                     </materialDesign:Chip>
                 </smtx:XamlDisplay>

@@ -47,11 +47,15 @@
     <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\paket-files\samueldjack\VirtualCollection\VirtualCollection\VirtualCollection\VirtualizingWrapPanel.cs">
-      <Paket>True</Paket>
-      <Link>VirtualCollection/VirtualizingWrapPanel.cs</Link>
-    </Compile>
     <Compile Include="XamlDisplayEx.cs" />
+    <Reference Include="MahApps.Metro.IconPacks.Material">
+      <HintPath>..\Libraries\MahApps.Metro.IconPacks.Material\MahApps.Metro.IconPacks.Material.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors">
+      <HintPath>..\packages\MaterialDesignColors\lib\net45\MaterialDesignColors.dll</HintPath>
+      <Private>True</Private>
+      <Paket>True</Paket>
+    </Reference>
     <Reference Include="PresentationFramework.Aero2" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -136,10 +140,6 @@
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
-    <Compile Include="IconPack.xaml.cs">
-      <DependentUpon>IconPack.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="IconPackViewModel.cs" />
     <Compile Include="Lists.xaml.cs">
       <DependentUpon>Lists.xaml</DependentUpon>
     </Compile>
@@ -263,10 +263,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Home.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="IconPack.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
