@@ -2,9 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
                     xmlns:controlzEx="clr-namespace:ControlzEx">
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Font.xaml" />
-    </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="MaterialDesignDialogHostPopup" TargetType="{x:Type controlzEx:PopupEx}">
         <Setter Property="StaysOpen" Value="True" />
@@ -155,7 +152,6 @@
                                         TextOptions.TextRenderingMode="Auto" 
                                         FocusManager.IsFocusScope="False"
                                         Foreground="{DynamicResource MaterialDesignBody}"
-                                        FontFamily="{StaticResource MaterialDesignFont}"
                                         Focusable="True"
                                         IsTabStop="False"
                                         Opacity="0"
