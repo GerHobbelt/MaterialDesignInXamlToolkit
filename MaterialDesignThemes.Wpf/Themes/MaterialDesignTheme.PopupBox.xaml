@@ -23,7 +23,7 @@
                     Margin="4,0"
                     Width="24"
                     Height="24"
-                    Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=wpf:PopupBox}, Path=Foreground}" />
+                    Foreground="{DynamicResource MaterialDesignBody}" />
             </Setter.Value>
         </Setter>
         <Setter Property="wpf:RippleAssist.Feedback" Value="{DynamicResource MaterialDesignFlatButtonRipple}" />
