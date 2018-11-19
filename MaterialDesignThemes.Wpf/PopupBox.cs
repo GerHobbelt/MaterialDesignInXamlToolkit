@@ -408,7 +408,7 @@ namespace MaterialDesignThemes.Wpf
         {
             base.OnIsKeyboardFocusWithinChanged(e);
 
-            if (IsPopupOpen && !IsKeyboardFocusWithin)
+            if (IsPopupOpen && !IsKeyboardFocusWithin && !StaysOpen)
             {
                 Close();
             }
@@ -464,7 +464,7 @@ namespace MaterialDesignThemes.Wpf
 
                 Close();
 
-            base.OnMouseEnter(e);
+            base.OnMouseLeave(e);
         }
 
         protected void Close()
