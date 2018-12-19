@@ -1,11 +1,11 @@
-RESTRICTION: || (== net45) (== net452)
+﻿RESTRICTION: || (== net45) (== net452)
 NUGET
   remote: https://www.nuget.org/api/v2
     AvalonEdit (5.0.4)
     MaterialDesignColors (1.1.3)
-    ShowMeTheXAML (1.0.10)
-    ShowMeTheXAML.AvalonEdit (1.0.10)
+    ShowMeTheXAML (1.0.12)
+    ShowMeTheXAML.AvalonEdit (1.0.12)
       AvalonEdit (>= 5.0.4 < 5.1)
-      ShowMeTheXAML (>= 1.0.10 < 1.1)
-    ShowMeTheXAML.MSBuild (1.0.10)
-      ShowMeTheXAML (>= 1.0.10 < 1.1)
+      ShowMeTheXAML (>= 1.0.12 < 1.1)
+    ShowMeTheXAML.MSBuild (1.0.12)
+      ShowMeTheXAML (>= 1.0.12 < 1.1)
