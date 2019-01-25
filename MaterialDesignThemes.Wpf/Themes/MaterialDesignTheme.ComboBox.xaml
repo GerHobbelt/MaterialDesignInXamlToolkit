@@ -428,7 +428,7 @@
                                  HorizontalAlignment="Left"
                                  HorizontalContentAlignment="Stretch"
                                  Style="{StaticResource MaterialDesignComboBoxEditableTextBox}"
-                                 CaretBrush="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BorderBrush}"                                 
+                                 CaretBrush="{DynamicResource PrimaryHueMidBrush}"
                                  Visibility="Collapsed" />
 
                         <wpf:SmartHint x:Name="Hint"

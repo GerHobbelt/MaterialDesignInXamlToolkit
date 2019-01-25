@@ -15,7 +15,7 @@
         <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}" />
         <Setter Property="wpf:TextFieldAssist.TextBoxViewMargin" Value="0 0 0 0" />
         <Setter Property="Background" Value="Transparent" />
-        <Setter Property="CaretBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=BorderBrush}" />
+        <Setter Property="CaretBrush" Value="{DynamicResource PrimaryHueMidBrush}" />
         <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst" />
         <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
         <Setter Property="Template">
