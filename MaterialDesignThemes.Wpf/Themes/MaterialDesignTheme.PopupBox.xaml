@@ -70,14 +70,13 @@
                     Kind="DotsVertical"
                     Margin="4,0"
                     Width="24"
-                    Height="24"
-                    Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type wpf:PopupBox}}, Path=(TextElement.Foreground)}" />
+                    Height="24" />
             </Setter.Value>
         </Setter>
         <Setter Property="wpf:RippleAssist.Feedback" Value="{DynamicResource MaterialDesignFlatButtonRipple}" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="wpf:ShadowAssist.ShadowDepth" Value="Depth3" />
-        <Setter Property="TextElement.FontWeight" Value="Normal" />
+        <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="Padding" Value="0 8 0 8" />
         <Setter Property="Focusable" Value="False" />
         <Setter Property="Template">
@@ -105,6 +104,7 @@
                         <ToggleButton x:Name="PART_Toggle" Style="{StaticResource ToggleButtonStyle}" IsChecked="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsPopupOpen, Mode=TwoWay}"
                                       Content="{TemplateBinding ToggleContent}" ContentTemplate="{TemplateBinding ToggleContentTemplate}"
                                       Cursor="Hand"
+                                      Foreground="{TemplateBinding Foreground}"
                                       VerticalAlignment="Center"
                                       />
                         <wpf:PopupEx x:Name="PART_Popup" IsOpen="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsPopupOpen, Mode=TwoWay}"
@@ -142,13 +142,6 @@
         <Setter Property="Foreground" Value="{DynamicResource MaterialDesignToolForeground}" />
         <Setter Property="Padding" Value="4"/>
     </Style>
-
-    <Style x:Key="MaterialDesignToolForegroundPopupBox" BasedOn="{StaticResource MaterialDesignToolPopupBox}" TargetType="wpf:PopupBox">
-        <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}"/>
-    </Style>
-
-    <iconPacks:PackIconMaterial x:Shared="False" x:Key="MaterialDesignMultiFloatingActionPopupBoxIcon"
-                  Kind="Plus" Width="24" Height="24" Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=wpf:PopupBox}, Path=Foreground}" />
 
     <Style TargetType="{x:Type wpf:PopupBox}" x:Key="MaterialDesignMultiFloatingActionPopupBox">
         <Setter Property="Background" Value="{DynamicResource PrimaryHueMidBrush}"/>
@@ -395,7 +388,15 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="ToggleContent" Value="{StaticResource MaterialDesignMultiFloatingActionPopupBoxIcon}" />
+        <Setter Property="ToggleContent">
+            <Setter.Value>
+                <iconPacks:PackIconMaterial
+                    Kind="Plus"
+                    Margin="4,0"
+                    Width="24"
+                    Height="24" />
+            </Setter.Value>
+        </Setter>
         <Style.Triggers>
             <Trigger Property="UnfurlOrientation" Value="Horizontal">
                 <Setter Property="ToolTipService.Placement" Value="Custom" />

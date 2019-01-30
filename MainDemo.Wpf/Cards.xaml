@@ -141,7 +141,7 @@
                                 materialDesign:RippleAssist.IsCentered="True">
                                 <iconPacks:PackIconMaterial Kind="Phone" />
                             </Button>
-                            <materialDesign:PopupBox HorizontalAlignment="Right" Style="{StaticResource MaterialDesignToolForegroundPopupBox}" Padding="2 0 2 0">
+                            <materialDesign:PopupBox HorizontalAlignment="Right" Padding="2 0 2 0">
                                 <StackPanel>
                                     <Button Content="More"/>
                                     <Button Content="Options"/>
