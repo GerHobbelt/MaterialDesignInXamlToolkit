@@ -1,4 +1,4 @@
-﻿RESTRICTION: || (== net45) (== net452)
+RESTRICTION: || (== net45) (== net452)
 NUGET
   remote: https://www.nuget.org/api/v2
     AvalonEdit (5.0.4)

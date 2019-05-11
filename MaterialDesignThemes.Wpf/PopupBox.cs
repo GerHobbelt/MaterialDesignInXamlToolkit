@@ -372,7 +372,7 @@ namespace MaterialDesignThemes.Wpf
                 typeof(PopupBox));
 
         /// <summary>
-        /// Raised when the popup is opened.
+        /// Raised when the popup is closed.
         /// </summary>
         public event RoutedEventHandler Closed
         {

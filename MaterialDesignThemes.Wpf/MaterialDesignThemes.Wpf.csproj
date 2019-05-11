@@ -323,6 +323,7 @@
     <Compile Include="ListViewAssist.cs" />
     <Compile Include="MessageQueueExtension.cs" />
     <Compile Include="Plane3D.cs" />
+    <Compile Include="ButtonAssist.cs" />
     <Compile Include="PopupEx.cs" />
     <Compile Include="ScaleHost.cs" />
     <Compile Include="ScrollViewerAssist.cs" />
