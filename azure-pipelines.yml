@@ -1,4 +1,4 @@
-# .NET Desktop
+﻿# .NET Desktop
 # Build and run tests for .NET Desktop or Windows classic desktop solutions.
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
@@ -11,7 +11,7 @@ pr:
 - release
 
 pool:
-  vmImage: 'VS2017-Win2016'
+  vmImage: 'windows-2019'
 
 variables:
   solution: 'MaterialDesignToolkit.Wpf.sln'
@@ -19,6 +19,11 @@ variables:
   buildConfiguration: 'AppVeyor'
 
 steps:
+- task: DotNetCoreInstaller@0
+  displayName: 'Use .NET Core sdk 3.0.100-preview3'
+  inputs:
+    version: '3.0.100-preview3'
+
 - powershell: .paket\paket.exe restore
 
 - task: VSBuild@1
@@ -39,13 +44,33 @@ steps:
     artifactName: 'DemoApp'
     targetPath: 'MainDemo.Wpf/bin/AppVeyor'
 
-- powershell: Copy-Item -Path ".\MaterialDesignThemes.nuspec" -Destination ".\MaterialDesignThemes.Wpf\bin\AppVeyor\"
+- task: PowerShell@2
+  displayName: 'Copy MDIX nuspec'
+  inputs:
+    targetType: 'inline'
+    script: 'Copy-Item -Path ".\\MaterialDesignThemes.nuspec" -Destination ".\\MaterialDesignThemes.Wpf\\bin\\AppVeyor\\"'
+    ignoreLASTEXITCODE: true
 
-- powershell: Copy-Item -Path ".\MaterialDesignThemes.Wpf\*" -Include *.cs -Recurse -Destination ".\MaterialDesignColors.Wpf\bin\AppVeyor\"
+- task: PowerShell@2
+  displayName: 'Copy CS Files'
+  inputs:
+    targetType: 'inline'
+    script: 'robocopy MaterialDesignThemes.Wpf MaterialDesignThemes.Wpf\\bin\\AppVeyor\\src *.cs /S /XD bin obj'
+    ignoreLASTEXITCODE: true
 
-- powershell: Copy-Item -Path ".\MaterialDesignColors.nuspec" -Destination ".\MaterialDesignColors.Wpf\bin\AppVeyor\"
+- task: PowerShell@2
+  displayName: 'Copy CS Files'
+  inputs:
+    targetType: 'inline'
+    script: 'Copy-Item -Path ".\\MaterialDesignColors.nuspec" -Destination ".\\MaterialDesignColors.Wpf\\bin\\AppVeyor\\"'
+    ignoreLASTEXITCODE: true
 
-- powershell: Copy-Item -Path ".\MaterialDesignThemes.MahApps.nuspec" -Destination ".\MaterialDesignThemes.MahApps\bin\Release\"
+- task: PowerShell@2
+  displayName: 'Copy CS Files'
+  inputs:
+    targetType: 'inline'
+    script: 'Copy-Item -Path ".\\MaterialDesignThemes.MahApps.nuspec" -Destination ".\\MaterialDesignThemes.MahApps\\bin\\Release\\"'
+    ignoreLASTEXITCODE: true
 
 - task: PublishPipelineArtifact@0
   name: "PublishMaterialDesign"
