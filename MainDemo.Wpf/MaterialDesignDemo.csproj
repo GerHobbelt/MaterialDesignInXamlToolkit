@@ -63,7 +63,6 @@
     <Compile Include="Toggles.xaml.cs">
       <DependentUpon>Toggles.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ButtonAssist.cs" />
     <Reference Include="PresentationFramework.Aero2" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
