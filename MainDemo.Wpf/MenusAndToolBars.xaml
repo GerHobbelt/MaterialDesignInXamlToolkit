@@ -77,7 +77,7 @@
                     </Button>
                     <!-- when badging in a toolbar, make sure the parent ToolBar.ClipToBounds="False", and
                      manually apply the button style -->
-                    <materialDesign:Badged ToolBar.OverflowMode="AsNeeded" Badge="{iconPacks:Material Alert}">
+                    <materialDesign:Badged ToolBar.OverflowMode="AsNeeded" Badge="{iconPacks:Material Alert}" CornerRadius="5">
                         <Button ToolTip="Badge it up!" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
                             <iconPacks:PackIconMaterial Kind="AirplaneTakeoff" />
                         </Button>
