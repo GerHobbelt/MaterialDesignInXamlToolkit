@@ -238,4 +238,4 @@ $RECYCLE.BIN/
 .module-cache
 
 #Libraries
-!Libraries/MahApps.Metro.IconPacks.Material/MahApps.Metro.IconPacks.Material.dll
+!Libraries/MahApps.Metro.IconPacks.ModernMaterial.dll

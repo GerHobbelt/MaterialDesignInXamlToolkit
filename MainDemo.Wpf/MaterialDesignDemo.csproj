@@ -27,8 +27,8 @@
     <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MahApps.Metro.IconPacks.Material">
-      <HintPath>..\Libraries\MahApps.Metro.IconPacks.Material\MahApps.Metro.IconPacks.Material.dll</HintPath>
+    <Reference Include="MahApps.Metro.IconPacks.ModernMaterial">
+      <HintPath>..\Libraries\MahApps.Metro.IconPacks.ModernMaterial.dll</HintPath>
     </Reference>
     <Reference Include="MaterialDesignColors">
       <HintPath>..\packages\MaterialDesignColors\lib\net45\MaterialDesignColors.dll</HintPath>
