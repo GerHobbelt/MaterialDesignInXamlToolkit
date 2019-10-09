@@ -3,21 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialDesignDemo", "MainDemo.Wpf\MaterialDesignDemo.csproj", "{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialDesignDemo", "MainDemo.Wpf\MaterialDesignDemo.csproj", "{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialDesignThemes.Wpf", "MaterialDesignThemes.Wpf\MaterialDesignThemes.Wpf.csproj", "{F079FB0A-A8ED-4216-B6A5-345756751A04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialDesignThemes.Wpf", "MaterialDesignThemes.Wpf\MaterialDesignThemes.Wpf.csproj", "{F079FB0A-A8ED-4216-B6A5-345756751A04}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55087897-5F09-45CA-8E12-12B36B45F262}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		paket.dependencies = paket.dependencies
-		paket.lock = paket.lock
 		Versioning.targets = Versioning.targets
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{3EC62BB9-196B-466E-B473-631A2C7ECD76}"
-	ProjectSection(SolutionItems) = preProject
-		paket.dependencies = paket.dependencies
 	EndProjectSection
 EndProject
 Global
@@ -36,14 +29,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|Any CPU.ActiveCfg = AppVeyor|Any CPU
-		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|Any CPU.Build.0 = AppVeyor|Any CPU
-		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|ARM.ActiveCfg = AppVeyor|Any CPU
-		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|ARM.Build.0 = AppVeyor|Any CPU
-		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|x64.ActiveCfg = AppVeyor|Any CPU
-		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|x64.Build.0 = AppVeyor|Any CPU
-		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|x86.ActiveCfg = AppVeyor|Any CPU
-		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|x86.Build.0 = AppVeyor|Any CPU
+		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|Any CPU.Build.0 = Release|Any CPU
+		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|ARM.ActiveCfg = Release|Any CPU
+		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|ARM.Build.0 = Release|Any CPU
+		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|x64.ActiveCfg = Release|Any CPU
+		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|x64.Build.0 = Release|Any CPU
+		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|x86.ActiveCfg = Release|Any CPU
+		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.AppVeyor|x86.Build.0 = Release|Any CPU
 		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -60,14 +53,14 @@ Global
 		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.Release|x64.Build.0 = Release|Any CPU
 		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.Release|x86.ActiveCfg = Release|Any CPU
 		{CF0A27A8-EF82-44E5-B673-ECCC150C48ED}.Release|x86.Build.0 = Release|Any CPU
-		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|Any CPU.ActiveCfg = AppVeyor|Any CPU
-		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|Any CPU.Build.0 = AppVeyor|Any CPU
-		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|ARM.ActiveCfg = AppVeyor|Any CPU
-		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|ARM.Build.0 = AppVeyor|Any CPU
-		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|x64.ActiveCfg = AppVeyor|Any CPU
-		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|x64.Build.0 = AppVeyor|Any CPU
-		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|x86.ActiveCfg = AppVeyor|Any CPU
-		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|x86.Build.0 = AppVeyor|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|Any CPU.ActiveCfg = Release|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|Any CPU.Build.0 = Release|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|ARM.ActiveCfg = Release|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|ARM.Build.0 = Release|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|x64.ActiveCfg = Release|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|x64.Build.0 = Release|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|x86.ActiveCfg = Release|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|x86.Build.0 = Release|Any CPU
 		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Debug|ARM.ActiveCfg = Debug|Any CPU
