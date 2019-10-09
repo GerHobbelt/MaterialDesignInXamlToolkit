@@ -17,15 +17,17 @@ variables:
   solution: 'MaterialDesignToolkit.Wpf.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'AppVeyor'
+  dotNetCoreVersion: '3.0.*'
 
 steps:
-- task: DotNetCoreInstaller@0
-  displayName: 'Use .NET Core sdk 3.0.100-preview7-012821'
+- task: UseDotNet@2
+  displayName: 'Use dotNet $(dotNetCoreVersion)'
   inputs:
-    version: '3.0.100-preview7-012821'
+    packageType: 'sdk'
+    version: '$(dotNetCoreVersion)'
 
 - task: NuGetToolInstaller@0
-  displayName: 'Use NuGet 4.3.0'
+  displayName: 'Use latest NuGet'
 
 - task: NuGetCommand@2
   displayName: 'NuGet restore'
@@ -36,7 +38,7 @@ steps:
     command: restore
 
     projects: |
-     MaterialDesignToolkit.Wpf.sln
+     $(solution)
 
 - powershell: .paket\paket.exe restore
 
@@ -44,7 +46,7 @@ steps:
   displayName: 'dotnet build'
   inputs:
     projects: '$(solution)'
-    arguments: '/p:Configuration=AppVeyor /p:Platform="Any CPU" /p:MDIX_CORE_VERSION=$(mdixVersion).$(Build.BuildID) /p:MDIX_COLORS_VERSION=$(mdixColorsVersion).$(Build.BuildID) /p:MDIX_MAHAPPS_VERSION=$(mdixMahappsVersion).$(Build.BuildID)'
+    arguments: '/p:Configuration=$(buildConfiguration) /p:Platform="Any CPU" /p:MDIX_CORE_VERSION=$(mdixVersion).$(Build.BuildID) /p:MDIX_COLORS_VERSION=$(mdixColorsVersion).$(Build.BuildID) /p:MDIX_MAHAPPS_VERSION=$(mdixMahappsVersion).$(Build.BuildID)'
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet test'

@@ -112,7 +112,7 @@ namespace MaterialDesignThemes.Wpf
         private ContentControl _popupContentControl;
         private ToggleButton _toggleButton;
         private Point _popupPointFromLastRequest;
-        private Point _lastRelativePositon;
+        private Point _lastRelativePosition;
 
         static PopupBox()
         {
@@ -315,6 +315,36 @@ namespace MaterialDesignThemes.Wpf
         }
 
         /// <summary>
+        /// Get or sets the popup horizontal offset in relation to the button.
+        /// </summary>
+        public static readonly DependencyProperty PopupHorizontalOffsetProperty = DependencyProperty.Register(
+            nameof(PopupHorizontalOffset), typeof(double), typeof(PopupBox), new PropertyMetadata(default(double)));
+
+        /// <summary>
+        /// Get or sets the popup horizontal offset in relation to the button.
+        /// </summary>
+        public double PopupHorizontalOffset
+        {
+            get { return (double)GetValue(PopupHorizontalOffsetProperty); }
+            set { SetValue(PopupHorizontalOffsetProperty, value); }
+        }
+
+        /// <summary>
+        /// Get or sets the popup vertical offset in relation to the button.
+        /// </summary>
+        public static readonly DependencyProperty PopupVerticalOffsetProperty = DependencyProperty.Register(
+            nameof(PopupVerticalOffset), typeof(double), typeof(PopupBox), new PropertyMetadata(default(double)));
+
+        /// <summary>
+        /// Get or sets the popup vertical offset in relation to the button.
+        /// </summary>
+        public double PopupVerticalOffset
+        {
+            get { return (double)GetValue(PopupVerticalOffsetProperty); }
+            set { SetValue(PopupVerticalOffsetProperty, value); }
+        }
+
+        /// <summary>
         /// Framework use. Provides the method used to position the popup.
         /// </summary>
         public CustomPopupPlacementCallback PopupPlacementMethod => GetPopupPlacement;
@@ -458,10 +488,10 @@ namespace MaterialDesignThemes.Wpf
                 (PopupMode == PopupBoxPopupMode.MouseOver || PopupMode == PopupBoxPopupMode.MouseOverEager))
             {
                 Point relativePosition = _popupContentControl.TranslatePoint(new Point(), this);
-                if (relativePosition != _lastRelativePositon)
+                if (relativePosition != _lastRelativePosition)
                 {
                     _popup.RefreshPosition();
-                    _lastRelativePositon = _popupContentControl.TranslatePoint(new Point(), this);
+                    _lastRelativePosition = _popupContentControl.TranslatePoint(new Point(), this);
                 }
             }
         }

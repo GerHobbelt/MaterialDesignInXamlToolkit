@@ -1,10 +1,10 @@
-RESTRICTION: || (== net472) (== netcoreapp3.0)
+﻿RESTRICTION: || (== net472) (== netcoreapp3.0)
 NUGET
   remote: https://www.nuget.org/api/v2
-    AvalonEdit (6.0.0-preview1)
+    AvalonEdit (6.0)
     MaterialDesignColors (1.2)
-    Microsoft.CSharp (4.6.0-preview7.19362.9)
-    Microsoft.NETCore.Platforms (3.0.0-preview7.19362.9)
+    Microsoft.CSharp (4.6.0)
+    Microsoft.NETCore.Platforms (3.0)
     Microsoft.NETCore.Targets (2.1) - restriction: || (&& (== net472) (< net45)) (== netcoreapp3.0)
     NuGet.CommandLine (5.1)
     runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl (4.3.3) - restriction: || (&& (== net472) (< net45)) (== netcoreapp3.0)
@@ -68,7 +68,7 @@ NUGET
       System.Runtime.Extensions (>= 4.3) - restriction: || (&& (== net472) (< net45)) (== netcoreapp3.0)
       System.Threading (>= 4.3) - restriction: || (&& (== net472) (< net45)) (== netcoreapp3.0)
       System.Threading.Tasks (>= 4.3) - restriction: || (&& (== net472) (< net45)) (== netcoreapp3.0)
-    System.Data.DataSetExtensions (4.6.0-preview3.19128.7)
+    System.Data.DataSetExtensions (4.6.0)
     System.Diagnostics.Debug (4.3) - restriction: || (&& (== net472) (< net45)) (== netcoreapp3.0)
       Microsoft.NETCore.Platforms (>= 1.1) - restriction: || (&& (== net472) (< net45)) (== netcoreapp3.0)
       Microsoft.NETCore.Targets (>= 1.1) - restriction: || (&& (== net472) (< net45)) (== netcoreapp3.0)
