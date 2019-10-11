@@ -17,11 +17,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MahApps.Metro.IconPacks.ModernMaterial">
-      <HintPath>..\Libraries\MahApps.Metro.IconPacks.ModernMaterial.dll</HintPath>
+      <HintPath>..\Libraries\netcoreapp3.0\MahApps.Metro.IconPacks.ModernMaterial.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="AvalonEdit" Version="6.0.0" />
     <PackageReference Include="MaterialDesignColors" Version="1.2.0" />
     <PackageReference Include="ShowMeTheXAML" Version="1.0.12" />
     <PackageReference Include="ShowMeTheXAML.AvalonEdit" Version="1.0.12" />

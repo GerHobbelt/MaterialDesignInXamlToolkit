@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.0;net45</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <MDIXVersion>$(MDIX_CORE_VERSION)</MDIXVersion>
@@ -17,9 +17,14 @@
     <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
   <Import Project="..\Versioning.targets" />
-  <ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0' ">
     <Reference Include="MahApps.Metro.IconPacks.ModernMaterial">
-      <HintPath>..\Libraries\MahApps.Metro.IconPacks.ModernMaterial.dll</HintPath>
+      <HintPath>..\Libraries\netcoreapp3.0\MahApps.Metro.IconPacks.ModernMaterial.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    <Reference Include="MahApps.Metro.IconPacks.ModernMaterial">
+      <HintPath>..\Libraries\net45\MahApps.Metro.IconPacks.ModernMaterial.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
