@@ -3,16 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFrameworks>netcoreapp3.0</TargetFrameworks>
-    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <AssemblyTitle>MaterialDesignColors.WpfExample</AssemblyTitle>
-    <Product>MaterialDesignColors.WpfExample</Product>
-    <Copyright>Copyright ©  2015</Copyright>
-    <ExtrasEnableWpfProjectSetup>true</ExtrasEnableWpfProjectSetup>
-    <Configurations>Debug;Release</Configurations>
     <UseWPF>true</UseWPF>
-  </PropertyGroup>
-  <PropertyGroup>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
@@ -21,10 +12,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MaterialDesignColors" Version="1.2.0" />
-    <PackageReference Include="ShowMeTheXAML" Version="1.0.12" />
-    <PackageReference Include="ShowMeTheXAML.AvalonEdit" Version="1.0.12" />
-    <PackageReference Include="ShowMeTheXAML.MSBuild" Version="1.0.12" />
+    <PackageReference Include="AvalonEdit" Version="6.0.0" />
+    <PackageReference Include="MaterialDesignColors" Version="1.2.1-ci715" />
+    <PackageReference Include="ShowMeTheXAML" Version="1.1.0-ci71" />
+    <PackageReference Include="ShowMeTheXAML.AvalonEdit" Version="1.1.0-ci71" />
+    <PackageReference Include="ShowMeTheXAML.MSBuild" Version="1.1.0-ci71" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MaterialDesignThemes.Wpf\MaterialDesignThemes.Wpf.csproj" />
