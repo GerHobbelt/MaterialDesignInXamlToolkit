@@ -74,6 +74,7 @@
             </Setter.Value>
         </Setter>
         <Setter Property="wpf:RippleAssist.Feedback" Value="{DynamicResource MaterialDesignFlatButtonRipple}" />
+        <Setter Property="wpf:RippleAssist.IsCentered" Value="True" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="PopupHorizontalOffset" Value="5"/>
         <Setter Property="PopupVerticalOffset" Value="5"/>
@@ -92,7 +93,6 @@
                                     <ControlTemplate TargetType="ToggleButton">
                                         <wpf:Ripple Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" Focusable="False"
                                                     ClipToBounds="False"
-                                                    wpf:RippleAssist.IsCentered="True"
                                                     HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" 
                                                     VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
                                                     Padding="{TemplateBinding Padding}" 
