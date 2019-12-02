@@ -23,10 +23,8 @@
     <ProjectReference Include="..\MaterialDesignThemes.Wpf\MaterialDesignThemes.Wpf.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\ProfilePic.jpg" />
-    <Resource Include="ScreenGrabFromGoogle.gif" />
-    <Resource Include="Resources\Chartridge046_small.jpg" />
-    <Resource Include="Resources\Contact.png" />
+    <Resource Include="Resources\*.jpg" />
+    <Resource Include="Resources\*.png" />
     <Resource Include="favicon.ico" />
   </ItemGroup>
 </Project>

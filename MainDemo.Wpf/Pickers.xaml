@@ -78,7 +78,7 @@
                 <smtx:XamlDisplay Key="pickers_14" HorizontalAlignment="Left" Margin="0 16 0 0">
                     <DatePicker Width="140" materialDesign:HintAssist.Hint="Pick Date" Style="{StaticResource MaterialDesignOutlinedDatePicker}" />
                 </smtx:XamlDisplay>
-                </StackPanel>
+            </StackPanel>
 
             <smtx:XamlDisplay Key="pickers_7" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0 16 0 0">
                 <materialDesign:TimePicker Is24Hours="True" x:Name="PresetTimePicker" Width="100" SelectedTimeChanged="PresetTimePicker_SelectedTimeChanged"/>
