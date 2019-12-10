@@ -17,14 +17,7 @@
     <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
   <Import Project="..\Versioning.targets" />
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0' ">
-    <Reference Include="MahApps.Metro.IconPacks.ModernMaterial">
-      <HintPath>..\Libraries\netcoreapp3.0\MahApps.Metro.IconPacks.ModernMaterial.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
-    <Reference Include="MahApps.Metro.IconPacks.ModernMaterial">
-      <HintPath>..\Libraries\net45\MahApps.Metro.IconPacks.ModernMaterial.dll</HintPath>
-    </Reference>
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="3.0.0-alpha0270" />
   </ItemGroup>
 </Project>

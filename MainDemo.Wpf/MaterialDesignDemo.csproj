@@ -5,13 +5,7 @@
     <TargetFrameworks>netcoreapp3.0</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
-    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="MahApps.Metro.IconPacks.ModernMaterial">
-      <HintPath>..\Libraries\netcoreapp3.0\MahApps.Metro.IconPacks.ModernMaterial.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AvalonEdit" Version="6.0.0" />
     <PackageReference Include="MaterialDesignColors" Version="1.2.1-ci715" />
