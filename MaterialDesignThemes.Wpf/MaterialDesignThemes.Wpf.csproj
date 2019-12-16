@@ -16,8 +16,7 @@
     <ExtrasEnableWpfProjectSetup>true</ExtrasEnableWpfProjectSetup>
     <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
-  <Import Project="..\Versioning.targets" />
   <ItemGroup>
-    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="3.0.0-alpha0270" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="3.0.0" />
   </ItemGroup>
 </Project>
