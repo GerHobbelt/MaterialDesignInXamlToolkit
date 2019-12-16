@@ -96,7 +96,6 @@
                                                     ClipToBounds="False"
                                                     HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" 
                                                     VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
-                                                    Padding="{TemplateBinding Padding}" 
                                                     SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
                                     </ControlTemplate>
                                 </Setter.Value>
