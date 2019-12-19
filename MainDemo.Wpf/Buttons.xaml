@@ -478,20 +478,21 @@
             <materialDesign:PopupBox
                 Grid.Column="3"
                 Margin="20,0,0,0"
+                Background="{DynamicResource PrimaryHueMidBrush}"
+                BorderBrush="{DynamicResource MaterialDesignTextBoxBorder}"
+                BorderThickness="1"
                 HorizontalAlignment="Stretch"
                 HorizontalContentAlignment="Stretch"
                 VerticalContentAlignment="Stretch"
                 materialDesign:RippleAssist.IsDisabled="True">
                 <materialDesign:PopupBox.ToggleContent>
-                    <Border Background="{DynamicResource PrimaryHueMidBrush}">
-                        <TextBlock
-                            Text="Stretchy popup box"
-                            Margin="10"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            TextTrimming="CharacterEllipsis"
-                            Foreground="{DynamicResource PrimaryHueMidForegroundBrush}" />
-                    </Border>
+                    <TextBlock
+                        Text="Stretchy popup box"
+                        Margin="10"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        TextTrimming="CharacterEllipsis"
+                        Foreground="{DynamicResource PrimaryHueMidForegroundBrush}" />
                 </materialDesign:PopupBox.ToggleContent>
                 <StackPanel>
                     <TextBlock Text="Hello" Style="{StaticResource MaterialDesignHeadline3TextBlock}" Margin="16,0" />
