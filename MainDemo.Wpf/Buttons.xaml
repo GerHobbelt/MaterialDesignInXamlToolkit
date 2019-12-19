@@ -377,7 +377,13 @@
         <Border Margin="0 24 0 0" BorderThickness="0 1 0 0" BorderBrush="{DynamicResource MaterialDesignDivider}" Grid.Row="8" />
         <TextBlock Style="{StaticResource MaterialDesignHeadline5TextBlock}"
                    Grid.Row="9" Margin="0 24">PopupBox</TextBlock>
-        <StackPanel Grid.Row="10" Orientation="Horizontal">
+        <Grid Grid.Row="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
             <smtx:XamlDisplay Key="buttons_10" Margin="8 0">
                 <StackPanel Orientation="Horizontal">
                     <CheckBox Name="PopupEnabled" IsChecked="True">Enable Popup</CheckBox>
@@ -439,7 +445,7 @@
                     </materialDesign:PopupBox>
                 </StackPanel>
             </smtx:XamlDisplay>
-            <smtx:XamlDisplay Key="buttons_11" Margin="8 0 0 5">
+            <smtx:XamlDisplay Grid.Column="1" Key="buttons_11" Margin="8 0 0 5">
                 <materialDesign:PopupBox Style="{StaticResource MaterialDesignMultiFloatingActionAccentPopupBox}"
                                          PlacementMode="BottomAndAlignCentres"
                                          ToggleCheckedContentCommand="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=wpfExample:Buttons}, Path=FloatingActionDemoCommand}"
@@ -455,7 +461,7 @@
                     </StackPanel>
                 </materialDesign:PopupBox>
             </smtx:XamlDisplay>
-            <smtx:XamlDisplay Key="buttons_9" Margin="8 0 0 5">
+            <smtx:XamlDisplay Grid.Column="2" Key="buttons_9" Margin="8 0 0 5">
                 <materialDesign:PopupBox Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}"
                                          PlacementMode="BottomAndAlignCentres"
                                          ToolTipService.Placement="Right"
@@ -469,6 +475,28 @@
                     </StackPanel>
                 </materialDesign:PopupBox>
             </smtx:XamlDisplay>
-        </StackPanel>
+            <materialDesign:PopupBox
+                Grid.Column="3"
+                Margin="20,0,0,0"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Stretch"
+                VerticalContentAlignment="Stretch"
+                materialDesign:RippleAssist.IsDisabled="True">
+                <materialDesign:PopupBox.ToggleContent>
+                    <Border Background="{DynamicResource PrimaryHueMidBrush}">
+                        <TextBlock
+                            Text="Stretchy popup box"
+                            Margin="10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            TextTrimming="CharacterEllipsis"
+                            Foreground="{DynamicResource PrimaryHueMidForegroundBrush}" />
+                    </Border>
+                </materialDesign:PopupBox.ToggleContent>
+                <StackPanel>
+                    <TextBlock Text="Hello" Style="{StaticResource MaterialDesignHeadline3TextBlock}" Margin="16,0" />
+                </StackPanel>
+            </materialDesign:PopupBox>
+        </Grid>
     </Grid>
 </UserControl>
