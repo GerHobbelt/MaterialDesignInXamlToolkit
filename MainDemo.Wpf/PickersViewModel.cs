@@ -8,6 +8,7 @@ namespace MaterialDesignColors.WpfExample
     {
         private DateTime _date;
         private DateTime _time;
+        private DateTime _doubleBindedDate;
         private string _validatingTime;
         private DateTime? _futureValidatingDate;
 
@@ -15,6 +16,7 @@ namespace MaterialDesignColors.WpfExample
         {
             Date = DateTime.Now;
             Time = DateTime.Now;
+            DoubleBindedDate = DateTime.Now;
         }
 
         public DateTime Date
@@ -33,6 +35,16 @@ namespace MaterialDesignColors.WpfExample
             set
             {
                 _time = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public DateTime DoubleBindedDate
+        {
+            get { return _doubleBindedDate; }
+            set
+            {
+                _doubleBindedDate = value;
                 OnPropertyChanged();
             }
         }
