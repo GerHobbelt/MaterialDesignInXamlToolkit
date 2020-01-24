@@ -18,6 +18,9 @@
   </PropertyGroup>
   <Import Project="..\Versioning.targets" />
   <ItemGroup>
-    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="3.0.0" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="3.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MaterialDesignColors.Wpf\MaterialDesignColors.Wpf.csproj" />
   </ItemGroup>
 </Project>
