@@ -34,7 +34,7 @@ var swatches=[
         "backgroundName": "Primary400",
         "backgroundColour": "#ef5350",
         "foregroundName": "Primary400Foreground",
-        "foregroundColour": "#000000",
+        "foregroundColour": "#FFFFFF",
         "foregroundOpacity": 0.87
       },
       {
@@ -42,21 +42,21 @@ var swatches=[
         "backgroundColour": "#f44336",
         "foregroundName": "Primary500Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary600",
         "backgroundColour": "#e53935",
         "foregroundName": "Primary600Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary700",
         "backgroundColour": "#d32f2f",
         "foregroundName": "Primary700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary800",
@@ -91,14 +91,14 @@ var swatches=[
         "backgroundColour": "#ff1744",
         "foregroundName": "Accent400Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent700",
         "backgroundColour": "#d50000",
         "foregroundName": "Accent700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       }
     ]
   },
@@ -130,14 +130,14 @@ var swatches=[
         "backgroundName": "Primary300",
         "backgroundColour": "#f06292",
         "foregroundName": "Primary300Foreground",
-        "foregroundColour": "#000000",
-        "foregroundOpacity": 0.87
+        "foregroundColour": "#FFFFFF",
+        "foregroundOpacity": 1.0
       },
       {
         "backgroundName": "Primary400",
         "backgroundColour": "#ec407a",
         "foregroundName": "Primary400Foreground",
-        "foregroundColour": "#000000",
+        "foregroundColour": "#FFFFFF",
         "foregroundOpacity": 0.87
       },
       {
@@ -145,14 +145,14 @@ var swatches=[
         "backgroundColour": "#e91e63",
         "foregroundName": "Primary500Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary600",
         "backgroundColour": "#d81b60",
         "foregroundName": "Primary600Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary700",
@@ -194,14 +194,14 @@ var swatches=[
         "backgroundColour": "#f50057",
         "foregroundName": "Accent400Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent700",
         "backgroundColour": "#c51162",
         "foregroundName": "Accent700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       }
     ]
   },
@@ -297,14 +297,14 @@ var swatches=[
         "backgroundColour": "#d500f9",
         "foregroundName": "Accent400Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent700",
         "backgroundColour": "#aa00ff",
         "foregroundName": "Accent700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       }
     ]
   },
@@ -337,14 +337,14 @@ var swatches=[
         "backgroundColour": "#9575cd",
         "foregroundName": "Primary300Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary400",
         "backgroundColour": "#7e57c2",
         "foregroundName": "Primary400Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary500",
@@ -440,14 +440,14 @@ var swatches=[
         "backgroundColour": "#7986cb",
         "foregroundName": "Primary300Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary400",
         "backgroundColour": "#5c6bc0",
         "foregroundName": "Primary400Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary500",
@@ -496,14 +496,14 @@ var swatches=[
         "backgroundColour": "#536dfe",
         "foregroundName": "Accent200Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent400",
         "backgroundColour": "#3d5afe",
         "foregroundName": "Accent400Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent700",
@@ -564,14 +564,14 @@ var swatches=[
         "backgroundColour": "#1e88e5",
         "foregroundName": "Primary600Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary700",
         "backgroundColour": "#1976d2",
         "foregroundName": "Primary700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary800",
@@ -606,14 +606,14 @@ var swatches=[
         "backgroundColour": "#2979ff",
         "foregroundName": "Accent400Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent700",
         "backgroundColour": "#2962ff",
         "foregroundName": "Accent700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       }
     ]
   },
@@ -659,8 +659,8 @@ var swatches=[
         "backgroundName": "Primary500",
         "backgroundColour": "#03a9f4",
         "foregroundName": "Primary500Foreground",
-        "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundColour": "#000000",
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary600",
@@ -674,14 +674,14 @@ var swatches=[
         "backgroundColour": "#0288d1",
         "foregroundName": "Primary700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary800",
         "backgroundColour": "#0277bd",
         "foregroundName": "Primary800Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary900",
@@ -762,29 +762,29 @@ var swatches=[
         "backgroundName": "Primary500",
         "backgroundColour": "#00bcd4",
         "foregroundName": "Primary500Foreground",
-        "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundColour": "#000000",
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary600",
         "backgroundColour": "#00acc1",
         "foregroundName": "Primary600Foreground",
-        "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundColour": "#000000",
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary700",
         "backgroundColour": "#0097a7",
         "foregroundName": "Primary700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary800",
         "backgroundColour": "#00838f",
         "foregroundName": "Primary800Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary900",
@@ -968,8 +968,8 @@ var swatches=[
         "backgroundName": "Primary500",
         "backgroundColour": "#4caf50",
         "foregroundName": "Primary500Foreground",
-        "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundColour": "#000000",
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary600",
@@ -983,7 +983,7 @@ var swatches=[
         "backgroundColour": "#388e3c",
         "foregroundName": "Primary700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary800",
@@ -1072,20 +1072,20 @@ var swatches=[
         "backgroundColour": "#8bc34a",
         "foregroundName": "Primary500Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary600",
         "backgroundColour": "#7cb342",
         "foregroundName": "Primary600Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary700",
         "backgroundColour": "#689f38",
         "foregroundName": "Primary700Foreground",
-        "foregroundColour": "#000000",
+        "foregroundColour": "#FFFFFF",
         "foregroundOpacity": 1.0
       },
       {
@@ -1093,14 +1093,14 @@ var swatches=[
         "backgroundColour": "#558b2f",
         "foregroundName": "Primary800Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary900",
         "backgroundColour": "#33691e",
         "foregroundName": "Primary900Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent100",
@@ -1189,21 +1189,21 @@ var swatches=[
         "backgroundColour": "#afb42b",
         "foregroundName": "Primary700Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary800",
         "backgroundColour": "#9e9d24",
         "foregroundName": "Primary800Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary900",
         "backgroundColour": "#827717",
         "foregroundName": "Primary900Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent100",
@@ -1306,7 +1306,7 @@ var swatches=[
         "backgroundColour": "#f57f17",
         "foregroundName": "Primary900Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent100",
@@ -1395,21 +1395,21 @@ var swatches=[
         "backgroundColour": "#ffa000",
         "foregroundName": "Primary700Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary800",
         "backgroundColour": "#ff8f00",
         "foregroundName": "Primary800Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary900",
         "backgroundColour": "#ff6f00",
         "foregroundName": "Primary900Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent100",
@@ -1484,21 +1484,21 @@ var swatches=[
         "backgroundColour": "#ff9800",
         "foregroundName": "Primary500Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary600",
         "backgroundColour": "#fb8c00",
         "foregroundName": "Primary600Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary700",
         "backgroundColour": "#f57c00",
         "foregroundName": "Primary700Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary800",
@@ -1512,7 +1512,7 @@ var swatches=[
         "backgroundColour": "#e65100",
         "foregroundName": "Primary900Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent100",
@@ -1594,28 +1594,28 @@ var swatches=[
         "backgroundColour": "#f4511e",
         "foregroundName": "Primary600Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary700",
         "backgroundColour": "#e64a19",
         "foregroundName": "Primary700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary800",
         "backgroundColour": "#d84315",
         "foregroundName": "Primary800Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary900",
         "backgroundColour": "#bf360c",
         "foregroundName": "Primary900Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent100",
@@ -1636,14 +1636,14 @@ var swatches=[
         "backgroundColour": "#ff3d00",
         "foregroundName": "Accent400Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Accent700",
         "backgroundColour": "#dd2c00",
         "foregroundName": "Accent700Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       }
     ]
   },
@@ -1683,7 +1683,7 @@ var swatches=[
         "backgroundColour": "#8d6e63",
         "foregroundName": "Primary400Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary500",
@@ -1765,7 +1765,7 @@ var swatches=[
         "backgroundColour": "#9e9e9e",
         "foregroundName": "Primary500Foreground",
         "foregroundColour": "#000000",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary600",
@@ -1840,7 +1840,7 @@ var swatches=[
         "backgroundColour": "#607d8b",
         "foregroundName": "Primary500Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 1.0
+        "foregroundOpacity": 0.87
       },
       {
         "backgroundName": "Primary600",
@@ -1868,18 +1868,6 @@ var swatches=[
         "backgroundColour": "#263238",
         "foregroundName": "Primary900Foreground",
         "foregroundColour": "#FFFFFF",
-        "foregroundOpacity": 0.87
-      }
-    ]
-  },
-  {
-    "name": "Black",
-    "colors": [
-      {
-        "backgroundName": "PrimaryWhite",
-        "backgroundColour": "#ffffff",
-        "foregroundName": "PrimaryWhiteForeground",
-        "foregroundColour": "#000000",
         "foregroundOpacity": 0.87
       }
     ]

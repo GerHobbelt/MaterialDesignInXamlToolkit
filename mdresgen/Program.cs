@@ -42,6 +42,11 @@ namespace mdresgen
             {"color dark-when-small", Color.Black}
         };
 
+        // run as:
+        //
+        //     pushd ./mdresgen/bin/Debug && ./mdresgen.exe icons && ./mdresgen.exe json && ./mdresgen.exe all-swatches && popd
+        //
+        // to (re)generate all icons and swatches.
         static void Main(string[] args)
         {
             var xDocument = XDocument.Load(BaseSnippetLocation);
@@ -103,7 +108,6 @@ namespace mdresgen
 
                 sb.AppendLine("using System.Collections.Generic;");
                 sb.AppendLine("using System.Windows.Media;");
-                sb.AppendLine("using MaterialDesignColors.Wpf;");
                 sb.AppendLine();
                 sb.AppendLine("namespace MaterialDesignColors.Recommended");
                 sb.AppendLine("{"); 
@@ -199,8 +203,7 @@ namespace mdresgen
         private static void GenerateJson(XDocument xDocument)
         {
             const string file = @"..\..\..\web\scripts\Swatches.js";
-
-
+            
             var json = new JArray(
                 xDocument.Root.Elements("section")
                     .Select(sectionElement => new JObject(
