@@ -1,15 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+#if NETFX_CORE
+using Windows.UI.Xaml.Controls;
+using Windows.Foundation;
+using Windows.UI.Xaml;
+using Windows.UI.Core;
+#else
 using System.ComponentModel;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
+#endif
+
 
 namespace MaterialDesignThemes.Wpf
 {
-    public class VirtualizingWrapPanel : VirtualizingPanel, IScrollInfo
+    public class VirtualizingWrapPanel : VirtualizingPanel
+#if !NETFX_CORE
+        , IScrollInfo
+#endif
     {
         private const double ScrollLineAmount = 16.0;
 
@@ -27,7 +38,12 @@ namespace MaterialDesignThemes.Wpf
 
         private static readonly DependencyProperty VirtualItemIndexProperty =
             DependencyProperty.RegisterAttached("VirtualItemIndex", typeof(int), typeof(VirtualizingWrapPanel), new PropertyMetadata(-1));
+
+#if NETFX_CORE
+        private ItemContainerGenerator _itemsGenerator;
+#else
         private IRecyclingItemContainerGenerator _itemsGenerator;
+#endif
 
         private bool _isInMeasure;
 
@@ -55,16 +71,24 @@ namespace MaterialDesignThemes.Wpf
 
         public VirtualizingWrapPanel()
         {
+#if NETFX_CORE
+            Dispatcher.RunAsync(CoreDispatcherPriority.Normal, Initialize);
+#else
             if (!DesignerProperties.GetIsInDesignMode(this))
             {
                 Dispatcher.BeginInvoke(new Action(Initialize));
             }
+#endif
         }
 
         private void Initialize()
         {
             _itemsControl = ItemsControl.GetItemsOwner(this);
+#if NETFX_CORE
+            _itemsGenerator = ItemContainerGenerator;
+#else
             _itemsGenerator = (IRecyclingItemContainerGenerator)ItemContainerGenerator;
+#endif
 
             InvalidateMeasure();
         }
@@ -372,10 +396,12 @@ namespace MaterialDesignThemes.Wpf
             InvalidateMeasure();
         }
 
+#if !NETFX_CORE
         public Rect MakeVisible(Visual visual, Rect rectangle)
         {
             return new Rect();
         }
+#endif
 
         public Rect MakeVisible(UIElement visual, Rect rectangle)
         {
