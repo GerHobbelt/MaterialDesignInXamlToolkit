@@ -238,10 +238,9 @@
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
                         <Ellipse x:Name="TodayBackground"
-                                 Fill="Transparent"
-                                 Opacity="0" 
+                                 Stroke="{TemplateBinding Foreground}"
                                  StrokeThickness="1"
-                                 Stroke="{TemplateBinding Foreground}"/>
+                                 Opacity="0" />
                         <Ellipse x:Name="SelectedBackground"
                                  Fill="{DynamicResource PrimaryHueMidBrush}"
                                  Opacity="0" />

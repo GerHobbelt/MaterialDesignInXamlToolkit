@@ -23,26 +23,6 @@ namespace MaterialDesignColors.WpfExample.Domain
                         DocumentationLink.DemoPageLink<Home>()
                     }
                 ),
-                new DemoItem("Palette", new PaletteSelector { DataContext = new PaletteSelectorViewModel() },
-                    new []
-                    {
-                        DocumentationLink.WikiLink("Brush-Names", "Brushes"),
-                        DocumentationLink.WikiLink("Custom-Palette-Hues", "Custom Palettes"),
-                        DocumentationLink.WikiLink("Swatches-and-Recommended-Colors", "Swatches"),
-                        DocumentationLink.DemoPageLink<PaletteSelector>("Demo View"),
-                        DocumentationLink.DemoPageLink<PaletteSelectorViewModel>("Demo View Model"),
-                        DocumentationLink.ApiLink<PaletteHelper>()
-                    }),
-                new DemoItem("Color Tool", new ColorTool { DataContext = new ColorToolViewModel() },
-                    new []
-                    {
-                        DocumentationLink.WikiLink("Brush-Names", "Brushes"),
-                        DocumentationLink.WikiLink("Custom-Palette-Hues", "Custom Palettes"),
-                        DocumentationLink.WikiLink("Swatches-and-Recommended-Colors", "Swatches"),
-                        DocumentationLink.DemoPageLink<ColorTool>("Demo View"),
-                        DocumentationLink.DemoPageLink<ColorToolViewModel>("Demo View Model"),
-                        DocumentationLink.ApiLink<PaletteHelper>()
-                    }),
                 new DemoItem("Buttons", new Buttons { DataContext = new ButtonsViewModel() } ,
                     new []
                     {
@@ -116,13 +96,6 @@ namespace MaterialDesignColors.WpfExample.Domain
                 {
                     VerticalScrollBarVisibilityRequirement = ScrollBarVisibility.Auto
                 },
-                new DemoItem("Icon Pack", new IconPack { DataContext = new IconPackViewModel(snackbarMessageQueue) },
-                    new []
-                    {
-                        DocumentationLink.DemoPageLink<IconPack>("Demo View"),
-                        DocumentationLink.DemoPageLink<IconPackViewModel>("Demo View Model"),
-                        DocumentationLink.ApiLink<PackIcon>()
-                    }),
                 new DemoItem("Colour Zones", new ColorZones(),
                     new []
                     {

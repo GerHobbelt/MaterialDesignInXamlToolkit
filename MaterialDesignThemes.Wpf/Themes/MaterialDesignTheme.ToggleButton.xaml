@@ -2,7 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf"
                     xmlns:system="clr-namespace:System;assembly=mscorlib"
-                    xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters">
+                    xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters"
+                    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks">
 
     <!-- TODO freeze, share -->
     <SolidColorBrush x:Key="AttentionToActionBrush" Color="Black" Opacity=".23" />
@@ -20,12 +21,12 @@
         </Setter>
     </Style>
 
-    <wpf:PackIcon x:Key="CheckMarkIcon" x:Shared="False" Kind="Check" Width="24" Height="24" FlowDirection="LeftToRight" />
+    <iconPacks:PackIconMaterial x:Key="CheckMarkIcon" x:Shared="False" Kind="Check" Width="24" Height="24" FlowDirection="LeftToRight" />
 
     <Style x:Key="MaterialDesignActionToggleButton" TargetType="{x:Type ToggleButton}">
         <Style.Resources>
             <ResourceDictionary>
-                <Style TargetType="wpf:PackIcon" BasedOn="{StaticResource {x:Type wpf:PackIcon}}">
+                <Style TargetType="iconPacks:PackIconMaterial" BasedOn="{StaticResource {x:Type iconPacks:PackIconMaterial}}">
                     <Setter Property="Width" Value="20" />
                     <Setter Property="Height" Value="20" />
                 </Style>

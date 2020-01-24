@@ -6,6 +6,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
              xmlns:domain="clr-namespace:MaterialDesignDemo.Domain"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="800">
     <Grid>
@@ -60,10 +61,10 @@
                 <ToggleButton Style="{StaticResource MaterialDesignActionToggleButton}"
                                   ToolTip="MaterialDesignActionLightToggleButton">
                     <ToggleButton.Content>
-                        <materialDesign:PackIcon Kind="EmoticonSad" />
+                        <iconPacks:PackIconMaterial Kind="EmoticonSad" />
                     </ToggleButton.Content>
                     <materialDesign:ToggleButtonAssist.OnContent>
-                        <materialDesign:PackIcon Kind="EmoticonHappy" />
+                        <iconPacks:PackIconMaterial Kind="EmoticonHappy" />
                     </materialDesign:ToggleButtonAssist.OnContent>
                 </ToggleButton>
             </smtx:XamlDisplay>
@@ -160,13 +161,13 @@
             <smtx:XamlDisplay Key="buttons_52" VerticalAlignment="Center" Margin="8 0 0 0" >
                 <ToggleButton Style="{StaticResource MaterialDesignSwitchToggleButton}"
                                   ToolTip="MaterialDesignSwitchToggleButton with Content and ToggleButtonAssist.OnContent">
-                    <materialDesign:PackIcon Kind="Pin" RenderTransformOrigin=".5,.5">
-                        <materialDesign:PackIcon.RenderTransform>
+                    <iconPacks:PackIconMaterial Kind="Pin" RenderTransformOrigin=".5,.5">
+                        <iconPacks:PackIconMaterial.RenderTransform>
                             <RotateTransform Angle="45" />
-                        </materialDesign:PackIcon.RenderTransform>
-                    </materialDesign:PackIcon>
+                        </iconPacks:PackIconMaterial.RenderTransform>
+                    </iconPacks:PackIconMaterial>
                     <materialDesign:ToggleButtonAssist.OnContent>
-                        <materialDesign:PackIcon Kind="Pin"/>
+                        <iconPacks:PackIconMaterial Kind="Pin"/>
                     </materialDesign:ToggleButtonAssist.OnContent>
                 </ToggleButton>
             </smtx:XamlDisplay>
@@ -184,21 +185,21 @@
         <StackPanel Grid.Column="0" Grid.Row="5" Margin="0 24 0 0" Orientation="Horizontal">
             <smtx:XamlDisplay Key="buttons_53" Margin="5 0 0 0" VerticalAlignment="Center">
                 <ToggleButton Style="{StaticResource MaterialDesignFlatToggleButton}" ToolTip="MaterialDesignFlatToggleButton">
-                    <materialDesign:PackIcon Kind="Paperclip" Height="21" Width="21" />
+                    <iconPacks:PackIconMaterial Kind="Paperclip" Height="21" Width="21" />
                 </ToggleButton>
             </smtx:XamlDisplay>
             <smtx:XamlDisplay Key="buttons_54" Margin="8 0 0 0" VerticalAlignment="Center" >
                 <ToggleButton Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}"
                                   ToolTip="MaterialDesignFlatPrimaryToggleButton"
                                   IsChecked="True">
-                    <materialDesign:PackIcon Kind="Heart" Height="21" Width="21" />
+                    <iconPacks:PackIconMaterial Kind="Heart" Height="21" Width="21" />
                 </ToggleButton>
             </smtx:XamlDisplay>
             <smtx:XamlDisplay Key="buttons_55" Margin="8 0 0 0" VerticalAlignment="Center">
                 <ToggleButton Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}"
                           ToolTip="MaterialDesignFlatPrimaryToggleButton"
                           IsEnabled="False">
-                    <materialDesign:PackIcon Kind="Heart" Height="21" Width="21" />
+                    <iconPacks:PackIconMaterial Kind="Heart" Height="21" Width="21" />
                 </ToggleButton>
             </smtx:XamlDisplay>
         </StackPanel>
@@ -213,16 +214,16 @@
                     </StackPanel>
                 </ListBox.ToolTip>
                 <ListBoxItem>
-                    <materialDesign:PackIcon Kind="FormatAlignLeft"/>
+                    <iconPacks:PackIconMaterial Kind="FormatAlignLeft"/>
                 </ListBoxItem>
                 <ListBoxItem>
-                    <materialDesign:PackIcon Kind="FormatAlignCenter"/>
+                    <iconPacks:PackIconMaterial Kind="FormatAlignCenter"/>
                 </ListBoxItem>
                 <ListBoxItem>
-                    <materialDesign:PackIcon Kind="FormatAlignRight"/>
+                    <iconPacks:PackIconMaterial Kind="FormatAlignRight"/>
                 </ListBoxItem>
                 <ListBoxItem>
-                    <materialDesign:PackIcon Kind="FormatAlignJustify"/>
+                    <iconPacks:PackIconMaterial Kind="FormatAlignJustify"/>
                 </ListBoxItem>
             </ListBox>
         </smtx:XamlDisplay>
@@ -236,13 +237,13 @@
                     </StackPanel>
                 </ListBox.ToolTip>
                 <ListBoxItem>
-                    <materialDesign:PackIcon Kind="FormatBold"/>
+                    <iconPacks:PackIconMaterial Kind="FormatBold"/>
                 </ListBoxItem>
                 <ListBoxItem>
-                    <materialDesign:PackIcon Kind="FormatItalic"/>
+                    <iconPacks:PackIconMaterial Kind="FormatItalic"/>
                 </ListBoxItem>
                 <ListBoxItem x:Name="UnderlineCheckbox">
-                    <materialDesign:PackIcon Kind="FormatUnderline"/>
+                    <iconPacks:PackIconMaterial Kind="FormatUnderline"/>
                 </ListBoxItem>
             </ListBox>
         </smtx:XamlDisplay>

@@ -86,7 +86,6 @@
                                             <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource MaterialDesignBody1TextBlock}">
                                                 <Setter Property="FontSize" Value="14" />
                                                 <Setter Property="TextWrapping" Value="WrapWithOverflow" />
-                                                <Setter Property="TextTrimming" Value="CharacterEllipsis" />
                                             </Style>
                                         </TextBlock.Style>
                                     </TextBlock>

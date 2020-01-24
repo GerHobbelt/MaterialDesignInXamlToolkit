@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Media.Animation;
-using ControlzEx;
 
 namespace MaterialDesignThemes.Wpf
 {

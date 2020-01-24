@@ -4,6 +4,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              x:Class="MaterialDesignColors.WpfExample.ProvingGround"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:wpfExample="clr-namespace:MaterialDesignColors.WpfExample"
              TextElement.Foreground="{DynamicResource MaterialDesignBody}"
              TextElement.FontWeight="Regular"
@@ -11,7 +12,6 @@
              TextOptions.TextFormattingMode="Ideal" 
              TextOptions.TextRenderingMode="Auto"        
              Background="{DynamicResource MaterialDesignPaper}"
-             FontFamily="{StaticResource MaterialDesignFont}"
              mc:Ignorable="d"              
              d:DesignWidth="477" d:DesignHeight="272"
              d:DataContext="{d:DesignInstance wpfExample:ProvingGroundViewModel, d:IsDesignTimeCreatable=False}">
@@ -30,8 +30,6 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ProgressBar.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Slider.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
                 -->
                 
             </ResourceDictionary.MergedDictionaries>
@@ -40,10 +38,10 @@
 
     <StackPanel Margin="32">
         <Button Style="{StaticResource MaterialDesignFloatingActionButton}">
-            <materialDesign:PackIcon Kind="CloudSync" Height="24" Width="24" />
+            <iconPacks:PackIconMaterial Kind="CloudSync" Height="24" Width="24" />
         </Button>
         <Button Style="{StaticResource MaterialDesignFloatingActionAccentButton}" Margin="0 12 0 12">
-            <materialDesign:PackIcon Kind="CloudSync" Height="24" Width="24" />
+            <iconPacks:PackIconMaterial Kind="CloudSync" Height="24" Width="24" />
         </Button>
         <ProgressBar Style="{DynamicResource MaterialDesignCircularProgressBar}" Value="33" Width="50" Height="50"  />
     </StackPanel>
