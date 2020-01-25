@@ -9,9 +9,9 @@
   <ItemGroup>
     <PackageReference Include="AvalonEdit" Version="6.0.1" />
     <PackageReference Include="MaterialDesignColors" Version="1.2.2" />
-    <PackageReference Include="ShowMeTheXAML" Version="1.1.0-ci71" />
-    <PackageReference Include="ShowMeTheXAML.AvalonEdit" Version="1.1.0-ci71" />
-    <PackageReference Include="ShowMeTheXAML.MSBuild" Version="1.1.0-ci71" />
+    <PackageReference Include="ShowMeTheXAML" Version="1.0.12" />
+    <PackageReference Include="ShowMeTheXAML.AvalonEdit" Version="1.0.12" />
+    <PackageReference Include="ShowMeTheXAML.MSBuild" Version="1.0.12" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MaterialDesignThemes.Wpf\MaterialDesignThemes.Wpf.csproj" />

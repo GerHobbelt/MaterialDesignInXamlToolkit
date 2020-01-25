@@ -5,7 +5,7 @@
              xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
              xmlns:smtx="clr-namespace:ShowMeTheXAML;assembly=ShowMeTheXAML"
              xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
-             xmlns:smtxAe="clr-namespace:ShowMeTheXAML.AvalonEdit;assembly=ShowMeTheXAML.AvalonEdit"           
+             xmlns:smtxAe="clr-namespace:ShowMeTheXAML.AvalonEdit;assembly=ShowMeTheXAML.AvalonEdit"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              xmlns:mahDemo="clr-namespace:MahAppsDragablzDemo"
              StartupUri="MainWindow.xaml">
@@ -29,7 +29,6 @@
 
                 <!-- ShowMeTheXaml -->
                 <ResourceDictionary Source="pack://application:,,,/ShowMeTheXAML.AvalonEdit;component/Themes/xamldisplayer.xaml" />
-
             </ResourceDictionary.MergedDictionaries>
             <!-- MahApps Brushes -->
             <!--<SolidColorBrush x:Key="HighlightBrush" Color="{DynamicResource Primary700}"/>
@@ -142,4 +141,3 @@
         </ResourceDictionary>
     </Application.Resources>
 </Application>
-    

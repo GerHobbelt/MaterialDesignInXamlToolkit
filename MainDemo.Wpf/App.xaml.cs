@@ -18,22 +18,23 @@ namespace MaterialDesignColors.WpfExample
             //ITheme theme = Theme.Create(new MaterialDesignLightTheme(), primaryColor, accentColor);
             //Resources.SetTheme(theme);
 
-
             //Illustration of setting culture info fully in WPF:
-            /*             
+#if false
             Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-FR");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
             FrameworkElement.LanguageProperty.OverrideMetadata(typeof(FrameworkElement), new FrameworkPropertyMetadata(
                         XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag)));
-            */
+#endif
 
             XamlDisplay.Init();
 
             // test setup for Persian culture settings
-            /*System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("fa-Ir");
+#if false
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("fa-Ir");
             System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fa-Ir");
             FrameworkElement.LanguageProperty.OverrideMetadata(typeof(FrameworkElement), new FrameworkPropertyMetadata(
-                        System.Windows.Markup.XmlLanguage.GetLanguage(System.Globalization.CultureInfo.CurrentCulture.IetfLanguageTag)));*/
+                        System.Windows.Markup.XmlLanguage.GetLanguage(System.Globalization.CultureInfo.CurrentCulture.IetfLanguageTag)));
+#endif						
 
             base.OnStartup(e);
         }
